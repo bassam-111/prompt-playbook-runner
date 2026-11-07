@@ -34,9 +34,18 @@ python app.py
 # then open http://127.0.0.1:5000
 ```
 
-## Sample output
+## Example runs
 
+```bash
+$ python playbook.py list
+follow-up: Polite follow-up email for an overdue operations task
+status-update: Client status update from a task list
+triage-summary: Triage summary for a new incoming request
+meeting-recap: Meeting recap with owners and deadlines
 ```
+
+```bash
+$ python playbook.py follow-up client="Acme Media" task="edited property photos" due_date="2026-10-27"
 You are an operations coordinator. Write a short, polite follow-up email to Acme Media about edited property photos. Mention it was due on 2026-10-27, ask for an updated timeline, and offer help if anything is blocked. Reply as a short email with a subject line.
 
 {'score': '4/4', 'checks': {'role': True, 'task': True, 'context': True, 'output_format': True}, 'tips': []}
